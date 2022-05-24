@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+/* Common */
+.sec_area1 {
+    padding: 15rem 0;
+}
+.sec_title1 {
+    font-size: 4vw;
+}
+.sec_title2 {
+    font-size: 5vw;
+}
+header.titleBox h3 {
+    padding-top: 12vh;
+}
+/* header */
+#header {
+    width: 6.1rem;
+    height: 7rem;
+    left: 10%;
+    top: 5%;
+}
+
+
+/* main */
+#main {
+    height: 100vh;
+}
+#main .main_visual {
+    width: 100%;
+    height: 100%;
+    padding: 5% 10% 10%;
+}
+#main .main_visual .visual_l {
+    margin-top: 0;
+    z-index: 10;
+    align-self: flex-end;
+}
+#main .main_visual .visual_l .sloganBox {
+    display: none;
+}
+#main .main_visual .visual_l .cafe_open {
+    margin-top: 20vh;
+}
+#main .main_visual .visual_r .visual_tab .mainImg {
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg/main_tabverImg.png") no-repeat center / cover;
+}
+#main .main_visual .visual_l .cafe_name {
+    width: 50vw;
+}
+#main .main_visual .visual_l .cafe_name .cafe_nameT {
+    width: 100%;
+    margin: 0 0;
+}
+#main .main_visual .visual_l .cafe_name .cafe_nameBt {
+    height: 6.7rem;
+}
+#main .main_visual .visual_l .cafe_open {
+    left: 0;
+}
+#main .main_visual .visual_r {
+    align-self: flex-start;
+    position: absolute;
+    width: 45%;
+    right: 10%;
+    margin-right: 4%;
+    height: 80vh;
+}
+
+#main .main_visual .visual_r .visual_web {
+    display: none;
+}
+#main .main_visual .visual_r .visual_tab {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#main .main_visual .circle {
+    width: 13.5rem;
+    height: 13.5rem;
+    bottom: 33vh;
+}
+
+/* about */
+#about .a_visual .a_info {
+    max-width: unset;
+    width: 100%;
+    margin-left: 0;
+    padding: 0 10%;
+
+}
+#about .a_visual .a_info .info_contentBox {
+    margin: 9vw 0;
+}
+#about .a_visual .a_info .info_contentBox .info_con:nth-child(1) p {
+    font-size: 6vw;
+}
+#about .a_visual .a_info .info_contentBox .info_con:nth-child(2) p {
+    font-size: 4vw;
+}
+#about .a_visual .a_info .info_contentBox .info_con:nth-child(3) p {
+    margin-top: 10vw;
+    font-size: 3vw;
+}
+
+/* signiture */
+#signiture .s_visual {
+    padding: 5rem 0;
+}
+#signiture .s_visual .s_titleBox {
+    gap: 3.5rem;
+}
+#signiture .s_visual .s_titleBox .bar {
+    width: 30%;
+}
+.s_cardBox {
+    padding: 0 10%;
+}
+.cardinner {
+    justify-content: space-between;
+}
+.cardItem {
+    width: calc(100% / 3.5);
+    height: 35vw;
+    border-radius: 5%;
+}
+
+.cardItem figure .cardImg {
+    height: 70%;
+}
+.cardItem figure .cardCont {
+    padding: 9%;
+}
+.cardItem figure .cardCont .cardTitle {
+    margin-bottom: 5%;
+    font-size: 1.8vw;
+}
+.cardItem figure .cardCont figcaption {
+    font-size: 1.2vw;
+}
+/* shop */
+#shop .sh_visual .shopBox {
+    height: 50vw;
+}
+#shop .sh_visual header.sh_titleBox {
+    height: 25vh;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a:nth-child(1) {
+    right: 0%;
+    bottom: 64%;
+    width: 32vw;
+    height: 32vw;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a:nth-child(2) {
+    top: 7%;
+    left: 0;
+    width: 52vw;
+    height: 32vw;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a:nth-child(3) {
+    bottom: unset;
+    top: 20%;
+    right: 8%;
+    width: 25vw;
+    height: 27vw;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a .more p {
+    font-size: 1.8rem;
+}
+#shop .sh_visual .sh_contentBox {
+    padding-left: 0%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* rest */
+#rest {
+    height: 35vh;
+}
+#rest .r_visual .typing {
+    font-size: 4.5vw;
+}
+
+/* access */
+#access .ac_visual {
+    justify-content: flex-start;
+    gap: 7vh;
+}
+#access .ac_visual .ac_content .ac_titleBox {
+    left: unset;
+    top: unset;
+    margin-bottom: 11.6rem;
+}
+#access .ac_visual .ac_img {
+    position: relative;
+    left: 30%;
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    height: 52vw;
+
+}
+#access .ac_visual .ac_img::after {
+    left: 46%;
+    width: 70%;
+}
+#access .ac_visual .ac_img div {
+    width: 70%;
+}
+/* contact */
+.agreement-inner > header {
+    padding: 3vw 5%;
+    height: unset;
+}
+#contact header.titleBox p {
+    font-size: 3vw;
+}
+#contact .formWrap {
+    padding: 0 10%;
+}
+.ur_form-bottom {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 20%;
+}
+.agreement-content {
+    padding: 6vw 5%;
+    height: auto;
+    font-size: 2.5vw;
+    /* overflow-y: scroll; */
+}
+.agreement-content .agree_title {
+    font-size: 2.5vw;
+}
+.agreement-inner > header::before {
+    width: 7vw;
+}
+.agreement-inner > header > h3 {
+    font-size: 3.5vw;
+    padding: 4vw 0;
+}
+.agreement-inner > header > span {
+    font-size: 2vw;
+}
+.agreement-close {
+    right: 7%;
+    top: 5%;
+}
+/* footer */
+.f_top {
+    padding: 0 10%;
+}

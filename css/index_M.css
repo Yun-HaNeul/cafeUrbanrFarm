@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+/* Common */
+.sec_area1 {
+    padding: 8rem 0;
+}
+/* main > section {
+    height: 100vh;
+} */
+header.info_titleBox .info_title {
+    margin-top: 12vw;
+}
+.sec_title1 {
+    font-size: 6vw;
+}
+.sec_title2 {
+    font-size: 7vw;
+}
+/* header */
+#header {
+    width: 12vw;
+    height: 13.3vw;
+    /* left: 0; */
+    top: 5%;
+    left: 5%;
+}
+/* main */
+#main {
+    background: linear-gradient(90deg, rgba(193,206,157,0) 0%, rgba(193,206,157,0) 60%, rgba(193,206,157,1) 60%);
+}
+#main .main_visual {
+    padding: 15% 10%;
+}
+#main .main_visual .visual_r {
+    width: 40%;
+    height: 70vh;
+}
+#main .main_visual .visual_l .cafe_name .cafe_nameBt {
+    height: 4.5vh;
+    margin-top: -5.3rem;
+}
+#main .main_visual .visual_l .cafe_open .open_txt::before {
+    right: -29%;
+}
+#main .main_visual .visual_l .cafe_open .open_txt p {
+    font-size: 5vw;
+}
+#main .main_visual .visual_l .cafe_open .open_content {
+    font-size: 4.5vw;
+    margin-left: 10%;
+}
+#main .main_visual .visual_l .cafe_open::after {
+    display: none;
+}
+#main .main_visual .circle {
+    width: 20vw;
+    height: 20vw;
+}
+/* about */
+#about .a_visual .a_info > * {
+    width: 100%;
+}
+#about .a_visual .a_info .info_contentBox {
+    margin: 10vh 0;
+}
+#about .a_visual .a_info .info_contentBox .info_con:nth-child(1) p {
+    font-size: 5vw;
+}
+#about .a_visual .a_info .info_contentBox .info_con:nth-child(2) p {
+    font-size: 4.5vw;
+}
+#about .a_visual .a_info .info_contentBox .info_con:nth-child(3) p {
+    font-size: 3.5vw;
+}
+
+/* signiture */
+.s_cardBox {
+    width: 70%;
+    padding: 0;
+    margin: 0 auto;
+}
+#signiture .s_visual .s_titleBox .bar {
+    width: 18%;
+}
+.swiper-slide  {
+    width: 100% !important;
+    height: 100vw;
+}
+.cardItem figure .cardCont {
+    padding: 7%;
+}
+.cardItem figure .cardCont .cardTitle {
+    font-size: 4.5vw;
+}
+.cardItem figure .cardCont figcaption {
+    font-size: 3vw;
+}
+.cardItem {
+    border-radius: 5%;
+}
+#signiture.active .cardItem {
+    animation: unset;
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+/* shop */
+#shop .sh_visual .shopBox {
+    height: 25vh;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a:nth-child(1) {
+    bottom: 55%;
+    width: 35vw;
+    height: 35vw;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a:nth-child(3) {
+    top: 39%;
+    right: 8%;
+}
+#shop .sh_visual .sh_contentBox h4 {
+    font-size: 4vw;
+}
+#shop .sh_visual .sh_contentBox p {
+    font-size: 2.5vw;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a .more p {
+    font-size: 3vw;
+}
+
+/* rest */
+#rest .r_visual .typing {
+    font-size: 5.5vw;
+} 
+
+/* access */
+#access .ac_visual .ac_content .ac_titleBox {
+    margin-bottom: 30%;
+}
+#access .ac_visual .ac_img {
+    left: 11%;
+    min-width: unset;
+    width: 90%;
+    height: 90vw;
+}
+#access .ac_visual .ac_img div {
+    width: 85%;
+}
+#access .ac_visual .ac_img::after {
+    left: 31%;
+    width: 82%;
+}
+#access .ac_visual .ac_content .cafe_title h4 {
+    font-size: 6.5vw;
+}
+#access .ac_visual .ac_content .cafe_title h5 {
+    font-size: 6vw;
+}
+#access .ac_visual .ac_content .cafe_loca p {
+    font-size: 4.2vw;
+}
+#access .ac_visual .ac_content .cafe_loca a.cafe_map {
+    font-size: 1.5rem;
+}
+.info_tel h6, .info_hour h6 {
+    font-size: 1.5rem;
+    margin-right: 10%;
+}
+.info_tel span, .info_hour span {
+    font-size: 5vw;
+}
+.info_etc {
+    font-size: 1.5rem;
+}
+
+/* contact */
+#contact .formWrap {
+    padding: 0 10%;
+}
+#contact header.titleBox .c_title {
+    margin-bottom: 2rem;
+}
+#contact header.titleBox p {
+    font-size: 1.5rem;
+}
+.ur_form-option {
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.ur_form {
+    margin-top : 3rem;
+}
+.ur_form-label {
+    font-size: 1.3rem;
+    line-height: unset;
+    margin-bottom: .5rem;
+}
+.ur_form-input {
+    height: 4rem;
+}
+.ur_form-bottom {
+    padding-left: 0;
+    align-items: flex-start;
+}
+.ur_agree-check span {
+    font-size: 1.2rem;
+}
+.ur_agree-check {
+    gap: 1.5rem;
+}
+.ur_submit {
+    width: 100%;
+    text-align: center;
+}
+.ur_form-submit {
+    width: 70%;
+    height: 4rem;
+    font-size: 1.5rem;
+}
+.topBox {
+    width: 12vw;
+    height: 12vw;
+    bottom: 2%;
+}
+.agreement-inner > header {
+    padding: 6vw 5%;
+}
+.agreement-close {
+    top: 4%;
+    width: 2.3rem;
+    height: 2.3rem;
+}
+/* footer */
+.f_top {
+    padding: 10% 10%;
+}
+.f_inner {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.f_logo > h1 {
+    width: 14rem;
+    height: 3.5rem;
+}
+.f_content ul > li {
+    font-size: 1.1rem;
+}
+.f_bottom {
+    font-size: 1.2rem;
+}
