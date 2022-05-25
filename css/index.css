@@ -939,7 +939,7 @@ textarea.ur_form-input {
 .ur_form-submit:hover {
     transform: scale(.9);
     background: white;
-    color: white;
+    color: var(--main-color);
 }
 #contact .marquee_zone {
     position: absolute;
