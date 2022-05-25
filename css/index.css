@@ -392,6 +392,9 @@ header.titleBox h3 {
     left: 0;
     bottom: 0;
 }
+#about .a_visual .a_imgs figure.a_img:nth-child(2) img {
+    object-position: center 70%;
+}
 #about .a_visual .a_imgs figure.a_img img {
     width: 100%;
     height: 100%;
@@ -404,8 +407,16 @@ header.titleBox h3 {
     height: 1px;
     overflow: hidden;
 }
-
-
+#about .a_visual .a_imgs .a_descr {
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+}
+#about .a_visual .a_imgs .a_descr > p {
+    font: 2.5rem "Scdream3";
+    letter-spacing: 0.05em;
+    line-height: 2;
+}
 /* active */
 #about.active .a_imgs.fadeIn {
     animation-delay: 0.5s;
@@ -544,13 +555,13 @@ header.titleBox h3 {
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(2) {
     left: 20%;
-    top: 5%;
+    top: 0%;
     width: 34vw;
-    height: 20vw;
+    height: 24vw;
     z-index: 2;
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(3) {
-    bottom: 0;
+    bottom: -6%;
     right: 15%;
     width: 20vw;
     height: 25vw;
@@ -702,7 +713,7 @@ header.titleBox h3 {
     transform: translate3d(10%, 10%, 0);
     width: 100%;
     height: 100%;
-    background: url("../images/bg/acc_img_1.png") no-repeat center / cover;
+    background: url("../images/bg/acc_img_1.jpg") no-repeat center / cover;
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
 
 }
@@ -767,19 +778,28 @@ header.titleBox h3 {
 #contact {
     position: relative;
     width: 100%;
-    background: rgba(224, 231, 204, 0.74);
+    background: url("../images/bg/con_bg1.jpg") no-repeat right / cover;
     padding-bottom: 12vh;
     overflow: hidden;
+}
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
 }
 #contact header.titleBox::before {
     display: none;
 }
 #contact header.titleBox .c_title {
     margin-bottom: 5rem;
+    color: white;
 }
 #contact header.titleBox p {
     font: 2.5rem 'Scdream3';
     letter-spacing: 0.05em;
+    color: white;
 }
 .ur_form {
     margin-top: 7rem;
@@ -799,6 +819,7 @@ header.titleBox h3 {
     font-size: 2rem;
     letter-spacing: 0.05em;
     line-height: 5rem;
+    color: white;
 }
 .ur_form-option:last-child .ur_form-label {
     line-height: unset;
@@ -807,7 +828,7 @@ header.titleBox h3 {
     content: '*';
     position: absolute;
     margin-left: .5rem;
-    color: #9F0000;
+    color: #adff2f;
 }
 .ur_form-inputBox {
     flex:4;
@@ -822,6 +843,7 @@ header.titleBox h3 {
     border: none;
     font-size: 1.5rem;
     transition: 0.35s;
+    background: rgba(255, 253, 245, 0.7);
 }
 .ur_form-input:focus {
     background: var(--sub-color);
@@ -844,7 +866,7 @@ textarea.ur_form-input {
     position: relative;
     width: 1.7rem;
     height: 1.7rem;
-    border-color: var(--main-color);
+    border-color: white;
     /* border-radius: unset;
     overflow: hidden; */
 }
@@ -859,13 +881,12 @@ textarea.ur_form-input {
 }
 .ur_agree-check span {
     display: flex;
-
     font-size: 2rem;
-    color: #000;
+    color: white;
 }
 .ur_agreement {
     position: relative;
-    color: var(--main-color);
+    color: white;
     font-family: 'Scdream4';
 }
 .ur_agreement::after {
@@ -875,21 +896,22 @@ textarea.ur_form-input {
     top: 110%;
     width: 100%;
     height: 1px;
-    background: var(--main-color);
+    background: white;
 }
 .ur_form-submit {
     width: 22rem;
     height: 5.3rem;
     line-height: 5.3rem;
-    border: 1px solid var(--main-color);
+    border: 1px solid white;
     background: transparent;
     font: 2.5rem "Scdream2";
     cursor: pointer;
     transition: 0.35s;
+    color: white;
 }
 .ur_form-submit:hover {
     transform: scale(.9);
-    background: var(--main-color);
+    background: white;
     color: white;
 }
 #contact .marquee_zone {
@@ -909,18 +931,27 @@ textarea.ur_form-input {
     animation: marquee 70s linear infinite alternate;
 }
     /* error */
-.ur_form-inputBox.error .ur_form-input {
-    border-bottom: 1px solid brown;
+.ur_form-inputBox.error::before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   width: 0;
+   height: 2px;
+   background: greenyellow;
+   animation: flow .5s linear forwards;
+}
+@keyframes flow {
+    to {width: 100%;}
 }
 .ur_form-inputBox.error::after {
     content: '';
     position: absolute;
-    border: 1px solid red;
-    width: 3rem;
-    height: 3rem;
-    right: -10%;
+    width: 2rem;
+    height: 2rem;
+    right: -5%;
     top: 50%;
     transform: translateY(-50%);
+    background: url("../images/icon/error.svg") no-repeat center / cover;
 }
 /* agreement */
 
@@ -1087,7 +1118,7 @@ textarea.ur_form-input {
     bottom: 10%;
     width: 6.5rem;
     height: 6.5rem;
-    border: 1px solid var(--main-color);
+    border: 1px solid white;
     border-radius: 50%;
     z-index: 555;
     cursor: pointer;

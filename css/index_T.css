@@ -105,7 +105,13 @@ header.titleBox h3 {
     margin-top: 10vw;
     font-size: 3vw;
 }
-
+#about .a_visual .a_imgs .a_descr {
+    right: 6%;
+    bottom: -7%;
+}
+#about .a_visual .a_imgs .a_descr > p {
+    font-size: 2.5vw;
+}
 /* signiture */
 #signiture .s_visual {
     padding: 5rem 0;
@@ -162,7 +168,7 @@ header.titleBox h3 {
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(3) {
     bottom: unset;
-    top: 20%;
+    top: 33%;
     right: 8%;
     width: 25vw;
     height: 27vw;

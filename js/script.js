@@ -89,6 +89,7 @@
 })();
 
 (function () {
+    
     // 개인정보
     const agree = document.querySelector('.agreement-area');
     const close = document.querySelector('.closeBtn');
@@ -129,5 +130,61 @@
 
     
 })();
+(function (){
+    // 폼 에러시 비활성화
+    function formHandler(){
+        const input = document.querySelectorAll('.required');
+        const checkbox = document.querySelector('.contact-checkBox');
+        const is_checked = checkbox.checked;
+        let $value
+        input.forEach(function(item){
+            $value = item.value;
+
+            if(!$value){
+                item.parentNode.classList.add('error');
+            }else {
+                item.parentNode.classList.remove('error');
+            }
+        })
+
+        let $errorCount = document.querySelectorAll('.error').length;
+
+        console.log($errorCount);
+
+        if($errorCount == 0) {
+                if(!is_checked == 1){
+                    document.querySelector('.ur_form-submit').disabled = true;
+                    alert('개인정보 처리 방법에 동의해주세요.')
+                }
+            }else {
+                document.querySelector('.ur_form-submit').disabled = true;
+            }
+    }
+    // 값 입력시 에러 제거
+    document.querySelector('.ur_form-submit').addEventListener('click',formHandler);
+    const inputBox = document.querySelectorAll('.ur_form-inputBox');
+    inputBox.forEach(function(item){
+        item.addEventListener('keyup',function() {
+            this.classList.remove('error');
+        });
+    })
+
+    emailjs.init('e9PwK_x1c7-Ip6znY');
+
+    document.getElementById('contact-Form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        // this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('cafe_urbarnfarm', 'template_hz15cdj', this)
+            .then(function () {
+                alert('빠른시일내에 답장 드리겠습니다. 감사합니다.');
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
+    });
+
+    }
+)()
 
 
