@@ -156,22 +156,27 @@ header.titleBox h3 {
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(1) {
     right: 0%;
-    bottom: 64%;
-    width: 32vw;
-    height: 32vw;
+    bottom: 43%;
+    width: 42vw;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a:nth-child(1)::before  {
+    border-top: 4.9vw solid lightgrey;
+    border-left: 4.9vw solid transparent;
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(2) {
-    top: 7%;
-    left: 0;
+    top: 15%;
+    left: 0%;
     width: 52vw;
-    height: 32vw;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a:nth-child(2)::before  {
+    border-top: 4.5vw solid lightgrey;
+    border-right: 4.5vw solid transparent;
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(3) {
     bottom: unset;
-    top: 33%;
-    right: 8%;
-    width: 25vw;
-    height: 27vw;
+    top: 41%;
+    right: 5%;
+    width: 36vw;
 }
 #shop .sh_visual .shopBox .lightBoxWrap a .more p {
     font-size: 1.8rem;
@@ -179,7 +184,6 @@ header.titleBox h3 {
 #shop .sh_visual .sh_contentBox {
     padding-left: 0%;
     text-align: center;
-    margin-top: 5%;
 }
 
 /* rest */

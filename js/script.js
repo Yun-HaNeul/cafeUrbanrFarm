@@ -1,43 +1,43 @@
-(function (){
-    document.documentElement.style.overflow = 'hidden';
-    const loader = document.querySelector(".loader");
-    function loading(){
-        let opacity = 0;
-        let loading = undefined;
+// (function (){
+//     document.documentElement.style.overflow = 'hidden';
+//     const loader = document.querySelector(".loader");
+//     function loading(){
+//         let opacity = 0;
+//         let loading = undefined;
     
 
-        loading = setInterval(fadeOut,60);
+//         loading = setInterval(fadeOut,60);
         
-        function fadeOut(){
-            opacity = Number(window.getComputedStyle(loader).getPropertyValue("opacity"));
+//         function fadeOut(){
+//             opacity = Number(window.getComputedStyle(loader).getPropertyValue("opacity"));
     
-            if(opacity > 0){
-                opacity = opacity - 0.1;
-                loader.style.opacity = opacity;
+//             if(opacity > 0){
+//                 opacity = opacity - 0.1;
+//                 loader.style.opacity = opacity;
 
-            }else {
-                clearInterval(loading);
-                document.documentElement.style.overflow = 'visible';
+//             }else {
+//                 clearInterval(loading);
+//                 document.documentElement.style.overflow = 'visible';
                 
-            }
-        };
+//             }
+//         };
         
-    };
-    if(window.innerWidth > 639){
-        setTimeout(loading,4000);
-    }else {
-        loader.style.display = 'none';
-        document.documentElement.style.overflow = 'visible';
-    }
-    window.addEventListener('resize',function (){
-        if(window.innerWidth > 639){
-            setTimeout(loading,4000);
-        }else {
-            loader.style.display = 'none';
-            document.documentElement.style.overflow = 'visible';
-        }
-    });
-})();
+//     };
+//     if(window.innerWidth > 639){
+//         setTimeout(loading,4000);
+//     }else {
+//         loader.style.display = 'none';
+//         document.documentElement.style.overflow = 'visible';
+//     }
+//     window.addEventListener('resize',function (){
+//         if(window.innerWidth > 639){
+//             setTimeout(loading,4000);
+//         }else {
+//             loader.style.display = 'none';
+//             document.documentElement.style.overflow = 'visible';
+//         }
+//     });
+// })();
 
 (function (){
     let typingBool = false;

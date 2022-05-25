@@ -541,30 +541,56 @@ header.titleBox h3 {
 #shop .sh_visual .shopBox .lightBoxWrap a {
     position: absolute;
 }
+#shop .sh_visual .shopBox .lightBoxWrap a::before {
+    content: '';
+    position: absolute;
+    
+}
+#shop .sh_visual .shopBox .lightBoxWrap a:nth-child(1)::before  {
+    bottom: 0;
+    left: 0;
+    border-top: 4.2vw solid lightgrey;
+    border-left: 4.2vw solid transparent;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a:nth-child(2)::before  {
+    bottom: 0;
+    right: 0;
+    border-top: 3.5vw solid lightgrey;
+    border-right: 3.5vw solid transparent;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 90px solid transparent;
+    border-right: 90px solid transparent;
+}
 #shop .sh_visual .shopBox .lightBoxWrap a > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(1) {
-    right: 8%;
-    bottom: 80%;
-    width: 30vw;
-    height: 25vw;
+    right: 4%;
+    bottom: 65%;
+    width: 36vw;
     z-index: 3;
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(2) {
-    left: 20%;
-    top: 0%;
-    width: 34vw;
-    height: 24vw;
+    left: 15%;
+    top: 13%;
+    width: 41vw;
     z-index: 2;
 }
+
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(3) {
-    bottom: -6%;
-    right: 15%;
-    width: 20vw;
-    height: 25vw;
+    bottom: -14%;
+    right: 10%;
+    width: 30vw;
     z-index: 1;
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(4), #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(5) {
@@ -592,6 +618,7 @@ header.titleBox h3 {
 }
 #shop .sh_visual .sh_contentBox {
     padding-left: 10%;
+    padding-top: 4%;
 }
 #shop .sh_visual .sh_contentBox h4 {
     font: 4rem 'Scdream4';
