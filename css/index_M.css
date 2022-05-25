@@ -110,7 +110,11 @@ header.info_titleBox .info_title {
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(1) {
     bottom: 55%;
-    width: 35vw;
+    width: 41vw;
+}
+#shop .sh_visual .shopBox .lightBoxWrap a:nth-child(2) {
+    bottom: 55%;
+    width: 41vw;
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(3) {
     top: 39%;
