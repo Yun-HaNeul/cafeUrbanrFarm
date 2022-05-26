@@ -243,6 +243,7 @@ header.info_titleBox .info_title {
 .f_inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 2rem;
 }
 .f_logo > h1 {
     width: 14rem;
