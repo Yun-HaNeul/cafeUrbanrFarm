@@ -113,12 +113,16 @@ header.info_titleBox .info_title {
     width: 41vw;
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(2) {
-    bottom: 55%;
+    bottom: 35%;
     width: 41vw;
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(3) {
-    top: 39%;
-    right: 8%;
+    width: 27vw;
+    top: 22%;
+    right: 21%;
+}
+#shop .sh_visual .sh_contentBox {
+    padding-top: 9%;
 }
 #shop .sh_visual .sh_contentBox h4 {
     font-size: 4vw;

@@ -174,9 +174,9 @@ header.titleBox h3 {
 }
 #shop .sh_visual .shopBox .lightBoxWrap a:nth-child(3) {
     bottom: unset;
-    top: 41%;
-    right: 5%;
-    width: 36vw;
+    top: 27%;
+    right: 9%;
+    width: 29vw;
 }
 #shop .sh_visual .shopBox .lightBoxWrap a .more p {
     font-size: 1.8rem;
